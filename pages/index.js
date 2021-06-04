@@ -17,42 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <nav> */}
-      {/* <div className="bar"> */}
-      {/* <div className="nav-item username">Ancon Digital</div> */}
-      {/* <div className="nav-item nav-link"> */}
-      {/* <details> */}
-      {/* <summary> */}
-      {/* <a href="#quienessomos"> &#128076; Quienes somos? </a> */}
-      {/* </summary> */}
-      {/* </details> */}
-      {/* </div> */}
-      {/* <div className="nav-item nav-link"> */}
-      {/* <details> */}
-      {/* <summary> */}
-      {/* <a href="#servicios"> &#128161; Servicios</a> */}
-      {/* </summary> */}
-      {/* </details> */}
-      {/* </div> */}
-      {/* <div className="nav-item nav-link"> */}
-      {/* <details> */}
-      {/* <summary> */}
-      {/* <a href="#portafolio"> &#128203; Portafolio</a> */}
-      {/* </summary> */}
-      {/* </details> */}
-      {/* </div> */}
-      {/* <div className="nav-item nav-link"> */}
-      {/* <details> */}
-      {/* <summary> */}
-      {/* <a href="#c/ontacto"> &#128231; Contáctanos</a> */}
-      {/* </summary> */}
-      {/* </details> */}
-      {/* </div> */}
-      {/* </div> */}
-      {/* </nav> */}
-
       <header className="flex flex-wrap flex-row justify-between md:items-center md:space-x-4 bg-white py-6 px-6 relative">
-        <a href="#" className="block">
+        {/* <a href="#" className="block">
           <span className="sr-only">themes.dev</span>
           <img
             className="h-6 md:h-8"
@@ -60,7 +26,7 @@ export default function Home() {
             alt="Themes.dev Logo"
             title="Themes.dev Logo"
           ></img>
-        </a>
+        </a> */}
         <button className="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
           <svg
             fill="currentColor"
@@ -75,34 +41,57 @@ export default function Home() {
           </svg>
         </button>
         <nav className="absolute md:relative top-16 left-0 md:top-0 z-20 flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0 ">
-          <a href="#quienessomos" className="block py-1 text-indigo-600 hover:underline">
-          Quienes somos?
+          <a
+            href="#quienessomos"
+            className="block py-1 text-indigo-600 hover:underline"
+          >
+            Quienes somos?
           </a>
-          <a href="#servicios" className="block py-1 text-gray-600 hover:underline">
+          <a
+            href="#servicios"
+            className="block py-1 text-gray-600 hover:underline"
+          >
             Servicios
           </a>
-          <a href="#portafolio" className="block py-1 text-gray-600 hover:underline">
-          Portafolio
+          <a
+            href="#portafolio"
+            className="block py-1 text-gray-600 hover:underline"
+          >
+            Portafolio
           </a>
-          <a href="#contacto" className="block py-1 text-gray-600 hover:underline">
+          <a
+            href="#contacto"
+            className="block py-1 text-gray-600 hover:underline"
+          >
             Contacto
           </a>
         </nav>
       </header>
 
       <main>
-        {/* <!-- titulo-central --> */}
         <div className="grid justify-items-center">
-          <div className="titlePage m-8 max-w-lg bg-indigo-200">
-            <div className="text-3xl">
-              <h1>Digitaliza tu negocio Avanza</h1>
+          <div className="my-40 md:my-4 grid sm:grid-cols-1 md:grid-cols-2 justify-items-center">
+            <div className="text-center">
+              <div className="h-48 text-4xl md:text-6xl lg:text-7xl text-center flex flex-wrap content-center">
+                <h1 className="text-indigo-500">Digitaliza tu negocio</h1>
+                <div className="text-2xl">
+                  <h1 className="text-indigo-700">
+                    Avanza, despega y evoluciona!
+                  </h1>
+                </div>
+              </div>
             </div>
-            <div className="text-2xl">
-              <h1> despega y evoluciona!</h1>
+            <div className="w-0 md:w-3/5">
+              <img
+                className="border-0"
+                src="/Create-amico.png"
+                alt="servicio de diseño web Illustration by Freepik Storyset"
+                title=" servicio de diseño web"
+              ></img>
             </div>
           </div>
-          <div className="my-12 w-4/5">
-            {/* <iframe
+          <div className="my-4 w-4/5">
+            <iframe
               width="99%"
               height="315px"
               src="https://www.youtube.com/embed/aJzQDpzC828"
@@ -110,7 +99,7 @@ export default function Home() {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe> */}
+            ></iframe>
           </div>
           <div className="w-4/5 mb-10">
             <h2 className="text-indigo-400" id="quienessomos">
@@ -185,7 +174,7 @@ export default function Home() {
             Últimos proyectos realizados
           </h1>
 
-          <div className="grid md:grid-cols-3 sm:grid-cols-1 m-5 text-indigo-500">
+          <div className="grid md:grid-cols-3 sm:grid-cols-1 m-5 text-indigo-500 gap-10">
             <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
               <p>
                 <img
@@ -197,7 +186,7 @@ export default function Home() {
                 <strong id="ELEMENTO"> Titulo:</strong>
                 Lorem ipsum dolor sit, am aperiam voluptate laboriosam harum
                 <a href="https://aplacitos.com" target="_blank">
-                  <button className="button-card bg-indigo-400 rounded-full">
+                  <button className="button-card bg-indigo-400 rounded-full font-bold">
                     Ver más &#128270;
                   </button>
                 </a>
@@ -214,7 +203,7 @@ export default function Home() {
                 <strong id="ELEMENTO"> Titulo:</strong>
                 Lorem ipsum dolor sit, am aperiam voluptate laboriosam harum
                 <a href="https://dannyduranmusic.com" target="_blank">
-                  <button className="button-card bg-indigo-400 rounded-full">
+                  <button className="button-card bg-indigo-400 rounded-full font-bold">
                     Ver más &#128270;
                   </button>
                 </a>
@@ -234,7 +223,7 @@ export default function Home() {
                   href="https://www.laagenciainmobiliaria.com/"
                   target="_blank"
                 >
-                  <button className="button-card bg-indigo-400 rounded-full">
+                  <button className="button-card bg-indigo-400 rounded-full font-bold">
                     Ver más &#128270;
                   </button>
                 </a>
@@ -251,7 +240,7 @@ export default function Home() {
                 <strong id="ELEMENTO"> prueba:</strong>
                 Lorem ipsum dolor sit, am aperiam voluptate laboriosam harum
                 <a>
-                  <button className="button-card bg-indigo-400 rounded-full">
+                  <button className="button-card bg-indigo-400 rounded-full font-bold">
                     Ver más &#128272;
                   </button>
                 </a>
@@ -268,7 +257,7 @@ export default function Home() {
                 <strong id="ELEMENTO"> prueba:</strong>
                 Lorem ipsum dolor sit, am aperiam voluptate laboriosam harum
                 <a>
-                  <button className="button-card bg-indigo-400 rounded-full">
+                  <button className="button-card bg-indigo-400 rounded-full font-bold">
                     Ver más &#128272;
                   </button>
                 </a>
@@ -286,7 +275,7 @@ export default function Home() {
                 <strong id="ELEMENTO"> prueba:</strong>
                 Lorem ipsum dolor sit, am aperiam voluptate laboriosam harum
                 <a>
-                  <button className="button-card bg-indigo-400 rounded-full">
+                  <button className="button-card bg-indigo-400 rounded-full font-bold">
                     Ver más &#128272;
                   </button>
                 </a>
@@ -321,7 +310,7 @@ export default function Home() {
               &#128231; info@aquivaelcorreo.com‎{" "}
             </a>
           </div>
-          <div className="copy-right">
+          <div className="copy-right text-xs mb-1">
             Desarrollado por Ancon Digital SA © Copyright 2021
           </div>
         </div>
