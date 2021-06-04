@@ -14,10 +14,14 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Changa:wght@700&display=swap"
+          rel="stylesheet"
+        ></link>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="flex flex-wrap flex-row justify-between md:items-center md:space-x-4 bg-white py-6 px-6 relative">
+      <header className="flex flex-wrap flex-row justify-between md:items-center md:space-x-4 bg-white py-3 px-6 relative">
         {/* <a href="#" className="block">
           <span className="sr-only">themes.dev</span>
           <img
@@ -27,7 +31,7 @@ export default function Home() {
             title="Themes.dev Logo"
           ></img>
         </a> */}
-        <button className="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
+        {/* <button className="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
           <svg
             fill="currentColor"
             viewBox="0 0 20 20"
@@ -39,8 +43,9 @@ export default function Home() {
               clipRule="evenodd"
             ></path>
           </svg>
-        </button>
-        <nav className="absolute md:relative top-16 left-0 md:top-0 z-20 flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0 ">
+        </button> */}
+        <nav className="absolute md:relative md:top-0 z-20 flex flex-row space-x-6 font-semibold w-full md:w-auto bg-white">
+          {/*   shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0 */}
           <a
             href="#quienessomos"
             className="block py-1 text-indigo-600 hover:underline"
@@ -69,92 +74,102 @@ export default function Home() {
       </header>
 
       <main>
-        <div className="grid justify-items-center">
-          <div className="my-40 md:my-4 grid sm:grid-cols-1 md:grid-cols-2 justify-items-center">
-            <div className="text-center">
-              <div className="h-48 text-4xl md:text-6xl lg:text-7xl text-center flex flex-wrap content-center">
-                <h1 className="text-indigo-500">Digitaliza tu negocio</h1>
-                <div className="text-2xl">
-                  <h1 className="text-indigo-700">
-                    Avanza, despega y evoluciona!
-                  </h1>
+        <div>
+          <div className="flex items-stretch">
+            <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
+              {/* The title */}
+              <div className="w-full md:full my-16 lg:col-span-2">
+                <div className="mt-30 text-5xl md:text-6xl lg:text-7xl">
+                  <h1 className="text-indigo-500">Digitaliza tu negocio</h1>
+                  <div className="text-2xl">
+                    <h1 className="text-indigo-700">
+                      Avanza, despega y evoluciona!
+                    </h1>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="w-0 md:w-3/5">
-              <img
-                className="border-0"
-                src="/Create-amico.png"
-                alt="servicio de diseño web Illustration by Freepik Storyset"
-                title=" servicio de diseño web"
-              ></img>
+              {/* The image */}
+              <div className="w-0 md:w-2/5 lg:w-4/5">
+                <img
+                  className="border-0"
+                  src="/Create-amico.png"
+                  alt="servicio de diseño web Illustration by Freepik Storyset"
+                  title=" servicio de diseño web"
+                ></img>
+              </div>
             </div>
           </div>
-          <div className="my-4 w-4/5">
-            <iframe
-              width="99%"
-              height="315px"
-              src="https://www.youtube.com/embed/aJzQDpzC828"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div className="my-4 flex items-center justify-center">
+            <div className="flex flex-wrap content-center w-3/5 shadow-md">
+              <iframe
+                width="99%"
+                height="315px"
+                src="https://www.youtube.com/embed/aJzQDpzC828"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
-          <div className="w-4/5 mb-10">
-            <h2 className="text-indigo-400" id="quienessomos">
+          <div className="mt-30 mb-10">
+            <h2 className="text-indigo-400 text-4xl text-4xl" id="quienessomos">
               Quienes somos?
             </h2>
-            <p className="Hero">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-              nostrum illo fuga corrupti repudiandae ipsam, enim officia sint
-              excepturi aperiam maiores? Aperiam unde ad temporibus cupiditate
-              aliquid, eaque quis quibusdam? Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Eaque nostrum illo fuga corrupti
-              repudiandae ipsam, enim officia sint excepturi aperiam maiores?
-              Aperiam unde ad temporibus cupiditate aliquid, eaque quis
-              quibusdam? Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Eaque nostrum illo fuga corrupti repudiandae ipsam, enim
-            </p>
+            <div className="flex items-center justify-center">
+              <p className="Hero w-4/5">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+                nostrum illo fuga corrupti repudiandae ipsam, enim officia sint
+                excepturi aperiam maiores? Aperiam unde ad temporibus cupiditate
+                aliquid, eaque quis quibusdam? Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Eaque nostrum illo fuga corrupti
+                repudiandae ipsam, enim officia sint excepturi aperiam maiores?
+                Aperiam unde ad temporibus cupiditate aliquid, eaque quis
+                quibusdam? Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Eaque nostrum illo fuga corrupti repudiandae ipsam, enim
+              </p>
+            </div>
           </div>
 
           <div>
-            <h2 className="text-indigo-400">Servicios disponibles</h2>
-            <h4>
-              Desarrollos a la medida, soluciones basadas en previos estudios de
-              las necesidades reales
-            </h4>
+            <h2 className="text-indigo-400 text-4xl">Servicios disponibles</h2>
+            <div className="flex items-center justify-center">
+              <p>
+                Desarrollos a la medida, soluciones basadas en previos estudios
+                de las necesidades reales
+              </p>
+            </div>
           </div>
-          <div className="grid sm:grid-cols-1 md:grid-cols-3 m-5 text-indigo-500">
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
-              <h2 className="text-indigo-400">Desarrollo web</h2>
+          <div className="grid sm:grid-cols-1 md:grid-cols-3 m-5 text-indigo-500 justify-items-center">
+            <div className="w-full sm:w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
+              <h2 className="text-indigo-300 text-4xl">Desarrollo web</h2>
               <img
                 className="border-0"
                 src="/Create-rafiki.png"
                 alt="servicio de diseño web Illustration by Freepik Storyset"
                 title=" servicio de diseño web"
               ></img>
-              <p>Apps y websites</p>
+              <p className="font-changa">Apps y websites</p>
             </div>
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
-              <h2 className="text-indigo-400">Diseño gráfico</h2>
+            <div className="w-full sm:w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
+              <h2 className="text-indigo-300 text-4xl">Diseño gráfico</h2>
               <img
                 className="border-0"
                 src="/Create-amico.png"
                 alt="servicio de diseño web Illustration by Freepik Storyset"
                 title=" servicio de diseño web"
               ></img>
-              <p>Identidad de marca</p>
+              <p className="font-changa">Identidad de marca</p>
             </div>
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
-              <h2 className="text-indigo-400">Marketing digital</h2>
+            <div className="w-full sm:w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
+              <h2 className="text-indigo-300 text-4xl">Marketing digital</h2>
               <img
                 className="border-0"
                 src="/Launching-rafiki.png"
                 alt="servicio de diseño web Illustration by Freepik Storyset"
                 title=" servicio de diseño web"
               ></img>
-              <p>Estrategia y pauta</p>
+              <p className="font-changa">Estrategia y pauta</p>
             </div>
           </div>
           <p>
@@ -164,148 +179,169 @@ export default function Home() {
             facere iste eligendi, eos nisir nisi excepturi!
             <strong> MARKETING DIGITAL: </strong> Lorem ipsum dolor sit amet
             consectetur, a vel doloremque.
-            <strong>
-              Cerca del 90% de los comercios en el mundo funcionan con
-              componentes digitales.
-            </strong>
           </p>
 
-          <h1 className="text-indigo-400" id="portafolio">
-            Últimos proyectos realizados
-          </h1>
+          <div class="flex items-center justify-center my-12">
+            <div class="bg-indigo-400 text-indigo-900 text-white font-bold rounded-lg border shadow-lg p-10 font-changa text-2xl w-10/12 text-center">
+              Cerca del <span className='text-green-400 font-bold'>90%</span> de los comercios en el mundo funcionan con
+              componentes digitales.
+            </div>
+          </div>
+
+          <div id="portafolio">
+            <h2 className="text-indigo-400 text-4xl">
+              Últimos proyectos realizados
+            </h2>
+          </div>
 
           <div className="grid md:grid-cols-3 sm:grid-cols-1 m-5 text-indigo-500 gap-10">
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
-              <p>
-                <img
-                  className="border-0"
-                  src="/cliente4.png"
-                  alt="servicio de diseño web"
-                  title=" servicio de diseño web"
-                ></img>
-                <strong id="ELEMENTO"> Titulo:</strong>
-                Lorem ipsum dolor sit, am aperiam voluptate laboriosam harum
-                <a href="https://aplacitos.com" target="_blank">
-                  <button className="button-card bg-indigo-400 rounded-full font-bold">
+            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg bg-purple-200">
+              <img
+                className="border-0"
+                src="/cliente4.png"
+                alt="servicio de diseño web"
+                title=" servicio de diseño web"
+              ></img>
+              <strong id="ELEMENTO"> Titulo:</strong>
+              Lorem ipsum dolor sit, am aperiam voluptate
+              <div className="w-4/5 flex items-center justify-center my-3">
+                <a
+                  href="https://aplacitos.com"
+                  target="_blank"
+                  className="w-3/5"
+                >
+                  <button className="button-card bg-indigo-500 rounded-full font-bold">
                     Ver más &#128270;
                   </button>
                 </a>
-              </p>
+              </div>
             </div>
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
-              <p>
-                <img
-                  className="border-0"
-                  src="/cliente1.png"
-                  alt="servicio de diseño web"
-                  title=" servicio de diseño web"
-                ></img>
-                <strong id="ELEMENTO"> Titulo:</strong>
-                Lorem ipsum dolor sit, am aperiam voluptate laboriosam harum
-                <a href="https://dannyduranmusic.com" target="_blank">
-                  <button className="button-card bg-indigo-400 rounded-full font-bold">
+            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg bg-purple-200">
+              <img
+                className="border-0"
+                src="/cliente1.png"
+                alt="servicio de diseño web"
+                title=" servicio de diseño web"
+              ></img>
+              <strong id="ELEMENTO"> Titulo:</strong>
+              Lorem ipsum dolor sit, am aperiam voluptate
+              <div className="w-4/5 flex items-center justify-center my-3">
+                <a
+                  href="https://dannyduranmusic.com"
+                  target="_blank"
+                  className="w-3/5"
+                >
+                  <button className="button-card bg-indigo-400 rounded-full font-bold font-changa">
                     Ver más &#128270;
                   </button>
                 </a>
-              </p>
+              </div>
             </div>
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
-              <p>
-                <img
-                  className="border-0"
-                  src="/cliente3.png"
-                  alt="servicio de diseño web"
-                  title=" servicio de diseño web"
-                ></img>
-                <strong id="ELEMENTO"> prueba:</strong>
-                Lorem ipsum dolor sit, am aperiam voluptate laboriosam harum
+            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg bg-purple-200">
+              <img
+                className="border-0"
+                src="/cliente3.png"
+                alt="servicio de diseño web"
+                title=" servicio de diseño web"
+              ></img>
+              <strong id="ELEMENTO"> prueba:</strong>
+              Lorem ipsum dolor sit, am aperiam voluptate
+              <div className="w-4/5 flex items-center justify-center my-3">
                 <a
                   href="https://www.laagenciainmobiliaria.com/"
                   target="_blank"
+                  className="w-3/5"
                 >
-                  <button className="button-card bg-indigo-400 rounded-full font-bold">
+                  <button className="button-card bg-indigo-400 rounded-full font-bold font-changa">
                     Ver más &#128270;
                   </button>
                 </a>
-              </p>
+              </div>
             </div>
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
-              <p>
-                <img
-                  className="border-0"
-                  src="/cliente2.png"
-                  alt="portafolio"
-                  title=" portafolio"
-                ></img>
-                <strong id="ELEMENTO"> prueba:</strong>
-                Lorem ipsum dolor sit, am aperiam voluptate laboriosam harum
-                <a>
-                  <button className="button-card bg-indigo-400 rounded-full font-bold">
+            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg bg-purple-200">
+              <img
+                className="border-0"
+                src="/cliente2.png"
+                alt="portafolio"
+                title=" portafolio"
+              ></img>
+              <strong id="ELEMENTO"> prueba:</strong>
+              Lorem ipsum dolor sit, am aperiam voluptate
+              <div className="w-4/5 flex items-center justify-center my-3">
+                <a className="w-3/5">
+                  <button className="button-card bg-indigo-400 rounded-full font-bold font-changa">
                     Ver más &#128272;
                   </button>
                 </a>
-              </p>
+              </div>
             </div>
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
-              <p>
-                <img
-                  className="border-0"
-                  src="/cliente5.png"
-                  alt="portafolio"
-                  title=" portafolio"
-                ></img>
-                <strong id="ELEMENTO"> prueba:</strong>
-                Lorem ipsum dolor sit, am aperiam voluptate laboriosam harum
-                <a>
-                  <button className="button-card bg-indigo-400 rounded-full font-bold">
+            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg bg-purple-200">
+              <img
+                className="border-0"
+                src="/cliente5.png"
+                alt="portafolio"
+                title=" portafolio"
+              ></img>
+              <strong id="ELEMENTO"> prueba:</strong>
+              Lorem ipsum dolor sit, am aperiam voluptate
+              <div className="w-4/5 flex items-center justify-center my-3">
+                <a className="w-3/5">
+                  <button className="button-card bg-indigo-400 rounded-full font-bold font-changa">
                     Ver más &#128272;
                   </button>
                 </a>
-              </p>
+              </div>
             </div>
 
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg">
-              <p>
-                <img
-                  className="border-0"
-                  src="/cliente6.png"
-                  alt="portafolio"
-                  title=" portafolio"
-                ></img>
-                <strong id="ELEMENTO"> prueba:</strong>
-                Lorem ipsum dolor sit, am aperiam voluptate laboriosam harum
-                <a>
-                  <button className="button-card bg-indigo-400 rounded-full font-bold">
+            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg bg-purple-200">
+              <img
+                className="border-0"
+                src="/cliente6.png"
+                alt="portafolio"
+                title=" portafolio"
+              ></img>
+              <strong id="ELEMENTO"> prueba:</strong>
+              Lorem ipsum dolor sit, am aperiam voluptate
+              <div className="w-4/5 flex items-center justify-center my-3">
+                <a className="w-3/5">
+                  <button className="button-card bg-indigo-400 rounded-full font-bold font-changa">
                     Ver más &#128272;
                   </button>
                 </a>
-              </p>
+              </div>
             </div>
           </div>
           {/* <!-- boton de whatsapp --> */}
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
-            inventore quas delectus excepturi iusto? Fugit vel error illo
-            maiores, possimus illum tenetur consectetur rerum veniam ipsum
-            facilis impedit? Necessitatibus, soluta.
-          </p>
-          <a href="https://api.whatsapp.com/send?phone=50766937639&text=Hola,%20he%20visto%20su%20numero%20en%20el%20enlace%20de%20ancon%20digital%20sa%20">
-            <button className="rounded-full bg-green-400 p-3 m-12">
-              &nbsp; Haz clic aquí, hablemos!&nbsp; &#9995;
-            </button>
-          </a>
+
+          <div className="my-32 flex items-center justify-center">
+            <p className="w-3/5 font-changa text-indigo-700 text-2xl">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+              inventore quas delectus excepturi iusto? Fugit vel error illo
+              maiores, possimus illum tenetur consectetur rerum veniam ipsum
+              facilis impedit? Necessitatibus, soluta.
+            </p>
+          </div>
+          <div className="my-32 flex items-center justify-center">
+            <a href="https://api.whatsapp.com/send?phone=50766937639&text=Hola,%20he%20visto%20su%20numero%20en%20el%20enlace%20de%20ancon%20digital%20sa%20">
+              <button className="rounded-full bg-green-400 p-3 m-12 font-changa text-2xl text-indigo-800">
+                &nbsp; Haz clic aquí, hablemos!&nbsp; &#9995;
+              </button>
+            </a>
+          </div>
         </div>
       </main>
 
       <footer className="bg-indigo-900" id="contacto">
         <div className="grid grid-col-3 text-center">
           <div>
-            <a href="https://api.whatsapp.com/send?phone=50766937639&text=Hola,%20he%20visto%20su%20numero%20en%20el%20enlace%20de%20ancon%20digital%20sa%20">
+            <a href="https://api.whatsapp.com/send?phone=50766937639&text=Hola,%20he%20visto%20su%20numero%20en%20el%20enlace%20de%20ancon%20digital%20sa%20"
+            className='text-indigo-300'>
               contacto{" "}
             </a>
           </div>
           <div>
-            <a href="mailto:info@ancondigitalsa.com">
+            <a href="mailto:info@ancondigitalsa.com"
+            className='text-indigo-300'>
               {" "}
               &#128231; info@aquivaelcorreo.com‎{" "}
             </a>
