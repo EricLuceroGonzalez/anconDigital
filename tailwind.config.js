@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'changa': ['"Changa"', 'sans-serif']
+        'changa': ['"Changa"', 'sans-serif'],
+        'work': ['"Work Sans"', 'sans-serif']
       }
     },
   },

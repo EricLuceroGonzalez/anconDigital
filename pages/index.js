@@ -17,6 +17,10 @@ export default function Home() {
           rel="stylesheet"
         />
         <link
+          href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;900&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
           href="https://fonts.googleapis.com/css2?family=Changa:wght@700&display=swap"
           rel="stylesheet"
         ></link>
@@ -124,9 +128,11 @@ export default function Home() {
             <div className="w-full grid grid-cols-1 md:grid-cols-2 justify-items-center">
               {/* The title */}
               <div className="mt-24 text-5xl w-full md:text-6xl lg:text-7xl">
-                <h1 className="text-indigo-500">Digitaliza tu negocio</h1>
+                <h1 className="text-indigo-500 font-work font-black">
+                  Digitaliza tu negocio
+                </h1>
                 <div className="text-sm md:text-2xl">
-                  <h1 className="text-indigo-700">
+                  <h1 className="text-indigo-700  font-work font-bold">
                     Avanza, despega y evoluciona!
                   </h1>
                 </div>
@@ -157,7 +163,7 @@ export default function Home() {
           </div>
           <div className="mt-16 mb-10">
             <h2
-              className="text-indigo-400  text-2xl md:text-3xl lg:text-5xl"
+              className="text-indigo-400  text-2xl md:text-3xl lg:text-5xl flex items-center justify-center font-work font-bold"
               id="quienessomos"
             >
               Quienes somos?
@@ -173,7 +179,7 @@ export default function Home() {
           </div>
 
           <div>
-            <h2 className="mt-16 text-indigo-400 text-2xl md:text-3xl lg:text-5xl">
+            <h2 className="mt-16 text-indigo-400 text-2xl md:text-3xl lg:text-5xl flex items-center justify-center font-work font-bold">
               Servicios disponibles
             </h2>
             <div className="flex items-center justify-center">
@@ -246,8 +252,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div id="portafolio">
-            <h2 className="mt-24 text-indigo-400 text-2xl md:text-3xl lg:text-5xl">
+          <div id="portafolio" className=' flex items-center justify-center '>
+            <h2 className="mt-24 text-indigo-400 text-2xl md:text-3xl lg:text-5xl font-work font-bold">
               Últimos proyectos realizados
             </h2>
           </div>
@@ -411,117 +417,117 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <h2 className="mt-16 text-indigo-400 text-2xl md:text-3xl lg:text-5xl">
+        <h2 className="mt-16 text-indigo-400 text-2xl md:text-3xl lg:text-5xl font-work font-bold text-center">
           Stack de desarrollo
         </h2>
-        <div className='md:grid md:grid-cols-3'>
-        <div className="flex justify-center">
-          <div className="bg-gradient-to-r from-indigo-100 to-transparent rounded-lg py-2 shadow-lg text-center w-10/12">
-            <p className="text-sm md:text-2xl font-light text-indigo-600">
-              FullStack
-            </p>
-            <div className="grid grid-cols-3 m-5 text-indigo-500 flex gap-4">
-              <div className="flex-1 flex justify-center">
-                <img
-                  className="w-6/12 md:w-12 border-0"
-                  src="/javascript.svg"
-                  alt="javascript"
-                  title=" javascript"
-                />
-              </div>
-              <div className="flex-1 flex justify-center">
-                <img
-                  className="w-full md:w-auto border-0"
-                  src="/reactjs-ar21.svg"
-                  alt="React js javascript library logo"
-                  title="React js javascript library logo"
-                />
-              </div>
-              <div className="flex-1  flex justify-center">
-                <img
-                  className="w-full md:w-8/12 border-0"
-                  src="/node-js.svg"
-                  alt="Nodeje backend logo"
-                  title="Nodeje backend logo"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-center mt-5">
-          <div className="bg-gradient-to-r from-indigo-200 to-transparent rounded-lg py-2 shadow-lg text-center w-10/12">
-            <p className="text-sm md:text-2xl font-light text-indigo-600">
-              Design and style
-            </p>
-            <div className="grid grid-cols-3 m-5 text-indigo-500 flex gap-5">
-              <div className="flex-1 flex justify-center">
-                <img
-                  className="w-6/12 md:w-12 border-0"
-                  src="/css.svg"
-                  alt="pure css logo"
-                  title="pure css logo"
-                />
-              </div>
-              <div className="flex-1 flex justify-center">
-                <img
-                  className="border-0"
-                  src="/getbootstrap-ar21.svg"
-                  alt="getbootstrap logo bootstrap"
-                  title="getbootstrap logo bootstrap"
-                />
-              </div>
-              <div className="flex-1 flex justify-center">
-                <img
-                  className="md:w-auto border-0"
-                  src="/tailwindcss-ar21.svg"
-                  alt="tailwind css logo"
-                  title="tailwind css logo"
-                />
+        <div className="md:grid md:grid-cols-3">
+          <div className="flex justify-center">
+            <div className="bg-gradient-to-r from-indigo-100 to-transparent rounded-lg py-2 shadow-lg text-center w-10/12">
+              <p className="text-sm md:text-2xl font-light text-indigo-600">
+                FullStack
+              </p>
+              <div className="grid grid-cols-3 m-5 text-indigo-500 flex gap-4">
+                <div className="flex-1 flex justify-center">
+                  <img
+                    className="w-6/12 md:w-12 border-0"
+                    src="/javascript.svg"
+                    alt="javascript"
+                    title=" javascript"
+                  />
+                </div>
+                <div className="flex-1 flex justify-center">
+                  <img
+                    className="w-full md:w-auto border-0"
+                    src="/reactjs-ar21.svg"
+                    alt="React js javascript library logo"
+                    title="React js javascript library logo"
+                  />
+                </div>
+                <div className="flex-1  flex justify-center">
+                  <img
+                    className="w-full md:w-8/12 border-0"
+                    src="/node-js.svg"
+                    alt="Nodeje backend logo"
+                    title="Nodeje backend logo"
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex justify-center mt-5">
-          <div className="bg-gradient-to-r from-indigo-300 to-transparent rounded-lg py-2 shadow-lg text-center w-10/12">
-            <p className="text-sm md:text-2xl font-light text-indigo-600">
-              Deployment
-            </p>
-            <div className="grid grid-cols-4 m-5 text-indigo-500 flex">
-            <div className="flex-1 flex justify-center">
-                <img
-                  className="w-full md:w-8/12 border-0"
-                  src="/heroku.svg"
-                  alt="heroku logo"
-                  title="heroku logo"
-                />
-              </div>
-              <div className="flex-1 flex justify-center">
-                <img
-                  className="w-full md:w-8/12 border-0"
-                  src="/netlify-ar21.svg"
-                  alt="netlify logo"
-                  title=" netlify logo"
-                />
-              </div>
-              <div className="flex-1 flex justify-center">
-                <img
-                  className="w-full md:w-8/12 border-0"
-                  src="/firebase-ar21.svg"
-                  alt="google firebase logo"
-                  title=" google firebase logo"
-                />
-              </div>
-              <div className="flex-1 flex justify-center">
-                <img
-                  className="w-full md:w-8/12 border-0"
-                  src="/github.svg"
-                  alt="github logo"
-                  title=" github logo"
-                />
+          <div className="flex justify-center mt-5">
+            <div className="bg-gradient-to-r from-indigo-200 to-transparent rounded-lg py-2 shadow-lg text-center w-10/12">
+              <p className="text-sm md:text-2xl font-light text-indigo-600">
+                Design and style
+              </p>
+              <div className="grid grid-cols-3 m-5 text-indigo-500 flex gap-5">
+                <div className="flex-1 flex justify-center">
+                  <img
+                    className="w-6/12 md:w-12 border-0"
+                    src="/css.svg"
+                    alt="pure css logo"
+                    title="pure css logo"
+                  />
+                </div>
+                <div className="flex-1 flex justify-center">
+                  <img
+                    className="border-0"
+                    src="/getbootstrap-ar21.svg"
+                    alt="getbootstrap logo bootstrap"
+                    title="getbootstrap logo bootstrap"
+                  />
+                </div>
+                <div className="flex-1 flex justify-center">
+                  <img
+                    className="md:w-auto border-0"
+                    src="/tailwindcss-ar21.svg"
+                    alt="tailwind css logo"
+                    title="tailwind css logo"
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          <div className="flex justify-center mt-5">
+            <div className="bg-gradient-to-r from-indigo-300 to-transparent rounded-lg py-2 shadow-lg text-center w-10/12">
+              <p className="text-sm md:text-2xl font-light text-indigo-600">
+                Deployment
+              </p>
+              <div className="grid grid-cols-4 m-5 text-indigo-500 flex">
+                <div className="flex-1 flex justify-center">
+                  <img
+                    className="w-full md:w-8/12 border-0"
+                    src="/heroku.svg"
+                    alt="heroku logo"
+                    title="heroku logo"
+                  />
+                </div>
+                <div className="flex-1 flex justify-center">
+                  <img
+                    className="w-full md:w-8/12 border-0"
+                    src="/netlify-ar21.svg"
+                    alt="netlify logo"
+                    title=" netlify logo"
+                  />
+                </div>
+                <div className="flex-1 flex justify-center">
+                  <img
+                    className="w-full md:w-8/12 border-0"
+                    src="/firebase-ar21.svg"
+                    alt="google firebase logo"
+                    title=" google firebase logo"
+                  />
+                </div>
+                <div className="flex-1 flex justify-center">
+                  <img
+                    className="w-full md:w-8/12 border-0"
+                    src="/github.svg"
+                    alt="github logo"
+                    title=" github logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
 
