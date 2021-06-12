@@ -91,7 +91,7 @@ export default function Home() {
             ></path>
           </svg>
         </button> */}
-        <nav className="absolute md:relative md:top-0 z-20 flex flex-row space-x-6 font-semibold w-full md:w-auto bg-white">
+        <nav className="absolute text-xs md:text-lg md:relative md:top-0 z-20 flex flex-row space-x-6 font-semibold w-full md:w-auto bg-white">
           {/*   shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0 */}
           <a
             href="#quienessomos"
@@ -127,7 +127,7 @@ export default function Home() {
               {/* The title */}
               <div className="mt-24 text-5xl w-full md:text-6xl lg:text-7xl">
                 <h1 className="text-indigo-500">Digitaliza tu negocio</h1>
-                <div className="text-2xl">
+                <div className="text-sm md:text-2xl">
                   <h1 className="text-indigo-700">
                     Avanza, despega y evoluciona!
                   </h1>
@@ -145,7 +145,7 @@ export default function Home() {
             </div>
           </div>
           <div className="my-4 flex items-center justify-center">
-            <div className="flex flex-wrap content-center w-4/5 md:w-3/5 lg:w-2/5 shadow-md">
+            <div className="flex flex-wrap content-center w-11/12 md:w-3/5 lg:w-2/5 shadow-md">
               <iframe
                 width="99%"
                 height="315px"
@@ -158,26 +158,28 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-16 mb-10">
-            <h2 className="text-indigo-400 text-4xl text-4xl" id="quienessomos">
+            <h2
+              className="text-indigo-400  text-2xl md:text-3xl lg:text-5xl"
+              id="quienessomos"
+            >
               Quienes somos?
             </h2>
             <div className="flex items-center justify-center">
-              <p className="Hero w-4/5 text-sm font-extralight text-center">
+              <p className="Hero w-4/5 text-xs md:text-lg md:w-3/5 font-extralight text-center">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
                 nostrum illo fuga corrupti repudiandae ipsam, enim officia sint
                 excepturi aperiam maiores? Aperiam unde ad temporibus cupiditate
-                aliquid, eaque quis quibusdam? Lorem ipsum dolor sit amet
-                consectetur, adipisicing elit.
+                aliquid, eaque quis quibusdam?
               </p>
             </div>
           </div>
 
           <div>
-            <h2 className="mt-16 text-indigo-400 text-4xl">
+            <h2 className="mt-16 text-indigo-400 text-2xl md:text-3xl lg:text-5xl">
               Servicios disponibles
             </h2>
             <div className="flex items-center justify-center">
-              <p className="text-sm font-extralight text-center">
+              <p className="text-sm font-extralight text-center w-4/5">
                 Desarrollos a la medida,{" "}
                 <span className="text-indigo-800">
                   soluciones basadas en previos estudios
@@ -187,35 +189,45 @@ export default function Home() {
             </div>
           </div>
           <div className="grid sm:grid-cols-1 md:grid-cols-3 m-5 text-indigo-500 justify-items-center">
-            <div className="w-full mt-8 sm:w-8/12 md:w-10/12 grid justify-items-center shadow-lg p-8 rounded-lg">
-              <h2 className="text-indigo-300 text-4xl">Desarrollo web</h2>
+            <div className="w-full mt-4 sm:w-8/12 md:w-10/12 grid justify-items-center shadow-lg p-8 rounded-lg">
+              <h2 className="text-indigo-300 text-3xl md:text-4xl">
+                Desarrollo web
+              </h2>
               <img
                 className="border-0"
                 src="/Create-rafiki.png"
                 alt="servicio de diseño web Illustration by Freepik Storyset"
                 title=" servicio de diseño web"
               ></img>
-              <p className="font-changa">Apps y websites</p>
+              <p className="font-changa text-xl md:text-2xl">Apps y websites</p>
             </div>
-            <div className="w-full mt-8 sm:w-8/12 md:w-10/12 grid justify-items-center shadow-lg p-8 rounded-lg">
-              <h2 className="text-indigo-300 text-4xl">Diseño gráfico</h2>
+            <div className="w-full mt-7 md:mt-8 sm:w-8/12 md:w-10/12 grid justify-items-center shadow-lg p-8 rounded-lg">
+              <h2 className="text-indigo-300 text-3xl md:text-4xl">
+                Diseño gráfico
+              </h2>
               <img
                 className="border-0"
                 src="/Create-amico.png"
                 alt="servicio de diseño web Illustration by Freepik Storyset"
                 title=" servicio de diseño web"
               ></img>
-              <p className="font-changa">Identidad de marca</p>
+              <p className="font-changa text-xl md:text-2xl">
+                Identidad de marca
+              </p>
             </div>
-            <div className="w-full mt-8 sm:w-8/12 md:w-10/12 grid justify-items-center shadow-lg p-8 rounded-lg">
-              <h2 className="text-indigo-300 text-4xl">Marketing digital</h2>
+            <div className="w-full mt-7 md:mt-8 sm:w-8/12 md:w-10/12 grid justify-items-center shadow-lg p-8 rounded-lg">
+              <h2 className="text-indigo-300 text-2xl md:text-4xl">
+                Marketing digital
+              </h2>
               <img
                 className="border-0"
                 src="/Launching-rafiki.png"
                 alt="servicio de diseño web Illustration by Freepik Storyset"
                 title=" servicio de diseño web"
               ></img>
-              <p className="font-changa">Estrategia y pauta</p>
+              <p className="font-changa text-xl md:text-2xl">
+                Estrategia y pauta
+              </p>
             </div>
           </div>
           <p>
@@ -228,131 +240,155 @@ export default function Home() {
           </p>
 
           <div className="flex items-center justify-center my-12">
-            <div className="bg-indigo-400 text-indigo-900 text-white font-bold rounded-lg border shadow-lg p-10 font-changa text-lg md:text-2xl w-10/12 text-justify">
+            <div className="bg-indigo-200 text-indigo-900 text-white font-bold rounded-lg border shadow-lg p-4 md:p-8 font-changa text-sm md:text-lg w-11/12 md:w-7/12 text-justify">
               Cerca del{" "}
-              <span className="text-green-400 font-bold text-2xl">90%</span> de
+              <span className="text-green-500 font-bold text-2xl">90%</span> de
               los comercios en el mundo funcionan utilizando componentes
-              digitales.
+              digitales para conectar con sus clientes.
             </div>
           </div>
 
           <div id="portafolio">
-            <h2 className="text-indigo-400 text-4xl mt-16">
+            <h2 className="mt-24 text-indigo-400 text-2xl md:text-3xl lg:text-5xl">
               Últimos proyectos realizados
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 sm:grid-cols-1 m-5 text-indigo-500 gap-10">
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg bg-purple-200">
+            <div className="w-11/12 grid justify-items-center shadow-lg p-2 rounded-lg bg-purple-200">
               <img
                 className="border-0"
                 src="/cliente4.png"
                 alt="servicio de diseño web"
                 title=" servicio de diseño web"
               ></img>
-              <strong id="ELEMENTO"> Titulo:</strong>
-              Lorem ipsum dolor sit, am aperiam voluptate
-              <div className="w-4/5 flex items-center justify-center my-3">
+              <div>
+                <h3 className="text-indigo-500">Título</h3>
+                <p className="text-sm font-extralight text-center w-5/5">
+                  Lorem ipsum dolor sit, am aperiam voluptate aperiam voluptate
+                </p>
+              </div>
+              <div className="flex items-center justify-center my-3 w-10/12 md:w-8/12">
                 <a
                   href="https://aplacitos.com"
                   target="_blank"
-                  className="w-3/5"
+                  className=" w-full"
                 >
-                  <button className="button-card bg-indigo-500 rounded-full font-bold">
+                  <button className="bg-indigo-500 font-bold text-white w-full rounded-full py-2 px-6 font-changa">
                     Ver más &#128270;
                   </button>
                 </a>
               </div>
             </div>
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg bg-purple-200">
+            <div className="w-11/12 grid justify-items-center shadow-lg p-2 rounded-lg bg-purple-200">
               <img
                 className="border-0"
                 src="/cliente1.png"
                 alt="servicio de diseño web"
                 title=" servicio de diseño web"
               ></img>
-              <strong id="ELEMENTO"> Titulo:</strong>
-              Lorem ipsum dolor sit, am aperiam voluptate
-              <div className="w-4/5 flex items-center justify-center my-3">
+              <div>
+                <h3 className="text-indigo-500">Título</h3>
+                <p className="text-sm font-extralight text-center w-5/5">
+                  Lorem ipsum dolor sit, am aperiam voluptate aperiam voluptate
+                </p>
+              </div>
+              <div className="flex items-center justify-center my-3 w-10/12 md:w-8/12">
                 <a
                   href="https://dannyduranmusic.com"
                   target="_blank"
-                  className="w-3/5"
+                  className=" w-full"
                 >
-                  <button className="button-card bg-indigo-400 rounded-full font-bold font-changa">
+                  <button className="bg-indigo-500 font-bold text-white w-full rounded-full py-2 px-6 font-changa">
                     Ver más &#128270;
                   </button>
                 </a>
               </div>
             </div>
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg bg-purple-200">
+            <div className="w-11/12 grid justify-items-center shadow-lg p-2 rounded-lg bg-purple-200">
               <img
                 className="border-0"
                 src="/cliente3.png"
                 alt="servicio de diseño web"
                 title=" servicio de diseño web"
               ></img>
-              <strong id="ELEMENTO"> prueba:</strong>
-              Lorem ipsum dolor sit, am aperiam voluptate
-              <div className="w-4/5 flex items-center justify-center my-3">
+              <div>
+                <h3 className="text-indigo-500">Título</h3>
+                <p className="text-sm font-extralight text-center w-5/5">
+                  Lorem ipsum dolor sit, am aperiam voluptate aperiam voluptate
+                </p>
+              </div>
+              <div className="flex items-center justify-center my-3 w-10/12 md:w-8/12">
                 <a
                   href="https://www.laagenciainmobiliaria.com/"
                   target="_blank"
-                  className="w-3/5"
+                  className=" w-full"
                 >
-                  <button className="button-card bg-indigo-400 rounded-full font-bold font-changa">
+                  <button className="bg-indigo-500 font-bold text-white w-full rounded-full py-2 px-6 font-changa">
                     Ver más &#128270;
                   </button>
                 </a>
               </div>
             </div>
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg bg-purple-200">
+            <div className="w-11/12 grid justify-items-center shadow-lg p-2 rounded-lg bg-purple-200">
               <img
                 className="border-0"
                 src="/cliente2.png"
                 alt="portafolio"
                 title=" portafolio"
               ></img>
-              <strong id="ELEMENTO"> prueba:</strong>
-              Lorem ipsum dolor sit, am aperiam voluptate
-              <div className="w-4/5 flex items-center justify-center my-3">
-                <a className="w-3/5">
-                  <button className="button-card bg-indigo-400 rounded-full font-bold font-changa">
+              <div>
+                <h3 className="text-indigo-500">Título</h3>
+                <p className="text-sm font-extralight text-center w-5/5">
+                  Lorem ipsum dolor sit, am aperiam voluptate aperiam voluptate
+                </p>
+              </div>
+              <div className="flex items-center justify-center my-3 w-10/12 md:w-8/12">
+                <a className="w-full">
+                  <button className="bg-indigo-500 font-bold text-white w-full rounded-full py-2 px-6 font-changa">
                     Ver más &#128272;
                   </button>
                 </a>
               </div>
             </div>
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg bg-purple-200">
+            <div className="w-11/12 grid justify-items-center shadow-lg p-2 rounded-lg bg-purple-200">
               <img
                 className="border-0"
                 src="/cliente5.png"
                 alt="portafolio"
                 title=" portafolio"
               ></img>
-              <strong id="ELEMENTO"> prueba:</strong>
-              Lorem ipsum dolor sit, am aperiam voluptate
-              <div className="w-4/5 flex items-center justify-center my-3">
-                <a className="w-3/5">
-                  <button className="button-card bg-indigo-400 rounded-full font-bold font-changa">
+              <div>
+                <h3 className="text-indigo-500">Título</h3>
+                <p className="text-sm font-extralight text-center w-5/5">
+                  Lorem ipsum dolor sit, am aperiam voluptate aperiam voluptate
+                </p>
+              </div>
+              <div className="flex items-center justify-center my-3 w-10/12 md:w-8/12">
+                <a className="w-full">
+                  <button className="bg-indigo-500 font-bold text-white w-full rounded-full py-2 px-6 font-changa">
                     Ver más &#128272;
                   </button>
                 </a>
               </div>
             </div>
 
-            <div className="w-11/12 grid justify-items-center shadow-lg p-8 rounded-lg bg-purple-200">
+            <div className="w-11/12 grid justify-items-center shadow-lg p-2 rounded-lg bg-purple-200">
               <img
                 className="border-0"
                 src="/cliente6.png"
                 alt="portafolio"
                 title=" portafolio"
               ></img>
-              <strong id="ELEMENTO"> prueba:</strong>
-              Lorem ipsum dolor sit, am aperiam voluptate
-              <div className="w-4/5 flex items-center justify-center my-3">
-                <a className="w-3/5">
-                  <button className="button-card bg-indigo-400 rounded-full font-bold font-changa">
+              <div>
+                <h3 className="text-indigo-500">Título</h3>
+                <p className="text-sm font-extralight text-center w-5/5">
+                  Lorem ipsum dolor sit, am aperiam voluptate aperiam voluptate
+                </p>
+              </div>
+              <div className="flex items-center justify-center my-3 w-10/12 md:w-8/12">
+                <a className="w-full">
+                  <button className="bg-indigo-500 font-bold text-white w-full rounded-full py-2 px-6 font-changa">
                     Ver más &#128272;
                   </button>
                 </a>
@@ -377,14 +413,126 @@ export default function Home() {
             </a>
           </div>
         </div>
+        <h2 className="mt-16 text-indigo-400 text-2xl md:text-3xl lg:text-5xl">
+          Stack de desarrollo
+        </h2>
+        <div className='md:grid md:grid-cols-3'>
+        <div className="flex justify-center">
+          <div className="bg-gradient-to-r from-indigo-100 to-transparent rounded-lg py-2 shadow-lg text-center w-10/12">
+            <p className="text-sm md:text-2xl font-light text-indigo-600">
+              FullStack
+            </p>
+            <div className="grid grid-cols-3 m-5 text-indigo-500 flex gap-4">
+              <div className="flex-1 flex justify-center">
+                <img
+                  className="w-6/12 md:w-12 border-0"
+                  src="/javascript.svg"
+                  alt="javascript"
+                  title=" javascript"
+                />
+              </div>
+              <div className="flex-1 flex justify-center">
+                <img
+                  className="w-full md:w-auto border-0"
+                  src="/reactjs-ar21.svg"
+                  alt="React js javascript library logo"
+                  title="React js javascript library logo"
+                />
+              </div>
+              <div className="flex-1  flex justify-center">
+                <img
+                  className="w-full md:w-8/12 border-0"
+                  src="/node-js.svg"
+                  alt="Nodeje backend logo"
+                  title="Nodeje backend logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center mt-5">
+          <div className="bg-gradient-to-r from-indigo-200 to-transparent rounded-lg py-2 shadow-lg text-center w-10/12">
+            <p className="text-sm md:text-2xl font-light text-indigo-600">
+              Design and style
+            </p>
+            <div className="grid grid-cols-3 m-5 text-indigo-500 flex gap-5">
+              <div className="flex-1 flex justify-center">
+                <img
+                  className="w-6/12 md:w-12 border-0"
+                  src="/css.svg"
+                  alt="pure css logo"
+                  title="pure css logo"
+                />
+              </div>
+              <div className="flex-1 flex justify-center">
+                <img
+                  className="border-0"
+                  src="/getbootstrap-ar21.svg"
+                  alt="getbootstrap logo bootstrap"
+                  title="getbootstrap logo bootstrap"
+                />
+              </div>
+              <div className="flex-1 flex justify-center">
+                <img
+                  className="md:w-auto border-0"
+                  src="/tailwindcss-ar21.svg"
+                  alt="tailwind css logo"
+                  title="tailwind css logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center mt-5">
+          <div className="bg-gradient-to-r from-indigo-300 to-transparent rounded-lg py-2 shadow-lg text-center w-10/12">
+            <p className="text-sm md:text-2xl font-light text-indigo-600">
+              Deployment
+            </p>
+            <div className="grid grid-cols-4 m-5 text-indigo-500 flex">
+            <div className="flex-1 flex justify-center">
+                <img
+                  className="w-full md:w-8/12 border-0"
+                  src="/heroku.svg"
+                  alt="heroku logo"
+                  title="heroku logo"
+                />
+              </div>
+              <div className="flex-1 flex justify-center">
+                <img
+                  className="w-full md:w-8/12 border-0"
+                  src="/netlify-ar21.svg"
+                  alt="netlify logo"
+                  title=" netlify logo"
+                />
+              </div>
+              <div className="flex-1 flex justify-center">
+                <img
+                  className="w-full md:w-8/12 border-0"
+                  src="/firebase-ar21.svg"
+                  alt="google firebase logo"
+                  title=" google firebase logo"
+                />
+              </div>
+              <div className="flex-1 flex justify-center">
+                <img
+                  className="w-full md:w-8/12 border-0"
+                  src="/github.svg"
+                  alt="github logo"
+                  title=" github logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
       </main>
 
-      <footer className="bg-indigo-900" id="contacto">
+      <footer className="bg-indigo-400 mt-8" id="contacto">
         <div className="grid grid-col-3 text-center">
           <div>
             <a
               href="https://api.whatsapp.com/send?phone=50766937639&text=Hola,%20he%20visto%20su%20numero%20en%20el%20enlace%20de%20ancon%20digital%20sa%20"
-              className="text-indigo-300"
+              className="text-indigo-900 font-changa uppercase"
             >
               contacto{" "}
             </a>
@@ -392,7 +540,7 @@ export default function Home() {
           <div>
             <a
               href="mailto:info@ancondigitalsa.com"
-              className="text-indigo-300"
+              className="text-indigo-900 font-changa uppercase"
             >
               {" "}
               &#128231; info@aquivaelcorreo.com‎{" "}
