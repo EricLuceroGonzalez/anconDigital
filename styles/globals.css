@@ -228,3 +228,12 @@ nav {
 ::hover {
     color: 09a6f3;
 } */
+.bordeA{
+    border: 1px solid red;
+}
+.bordeB{
+    border: 1px solid blue;
+}
+.bordeC{
+    border: 1px solid green;
+}
